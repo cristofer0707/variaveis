@@ -1,26 +1,69 @@
-let anoAtual= 2024;
-const nomeCompleto = "cristofer santos da mota";
-let idade = 16;
-const cusrsoFaculdade = "advocacia";
-let cidadeAtual = "sjp";
+const prompt = require('prompt-sync');
+const entrada = prompt();
 
-console.log(`ola eu sou o ${nomeCompleto} tenho ${idade} anos e estou cusrsando ${cusrsoFaculdade}`);
+let anoAtual = 2024;
+const nomeCompleto = 'Matheus Aliski'
+let idade = 17;
+const cursoFaculdade = 'radiologista'
+let cidadeAtual = 'SJP';
+
+console.log(`Ola eu sou o '${nomeCompleto} 'eu tenho '$(idade) "moro em" ${cidadeAtual}; quero`);
+console.log(anoAtual);
 
 anoAtual = 2025;
-idade =17;
-cursoFaculdade = "formado em advocacia";
-cidadeAtual = "sjp";
-console.log(`ola tenho ${idade} anos e estou ${cusrsoFaculdade} e mori`);
+
+console.log(anoAtual);
+
+//agencia de viagens
+
+console.log('------------------');
+console.log('      LOGIN       ');
+console.log('------------------');
+
+const loginCerto = 'Matheus';
+const senhaCerta = 1234;
+
+var login = entrada('Digite seu login:     ');
+var senha = entrada('Digite sua senha:     ');
 
 
-//agenciadeviagem
+while(login != loginCerto) {
+console.log('login invalido');
+login = entrada('digite novamene seu login:     ');
+}
 
-const nomeComprador = "jao"
-const cpf = "12376597576"
-const idadeComprador = "99"
-const listadeDestinos = new Array ("roraima", "santa catarina", "são paulo", "rio de janeiro", "espirito santo");
-console.log (`ola senhor ${nomeComprador} obrigado por escolher a agencia de viagem, voce tem ${idadeComprador} anos e cpf ${cpf} e podemos te oferecer os seguintes destinos ${listadeDestinos}"`);
 
-console. log(listadeDestinos[2]);
-consolke.log("");
-console.log(`ola senhor adicionamos um novo destino a lista de destinos
+while(senha != senhaCerta) {
+console.log('senha invalida');
+login = entrada('digite novamene sua senha:     ');
+
+
+}
+
+
+var nomeComprador = entrada('qual seu nome?');
+var cpf = entrada('Qual o seu cpf?');
+var idadeComprador = entrada('Qual é a sua idade?');
+const listaDeDestinos = new  Array(
+  "Joinville",
+  " Florianṕolis",
+  " João Pessoa",
+  " Osasco",
+  " Lages",
+);
+
+console.log (`Olá senhor ${nomeComprador}, seu cpf é ${cpf} e idade ${idadeComprador}, certo? Sua viagem está reservada, com os seguintes destinos planejados: ${listaDeDestinos}´);
+
+console.log (listaDeDestinos[2]);
+console.log("");
+
+console.log(´Boa noite robson, nós temos um novo destino adicionado à sua viagem`);
+
+listaDeDestinos.push("Rio de Janeiro");
+
+console.log(listaDeDestinos);
+
+
+if(idadeComprador<18){
+  console.log(`infelizmente nao podemos te vender uma passagem pois o senhor (a) é menor de idade`)
+}
