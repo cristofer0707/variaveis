@@ -2,12 +2,12 @@ const prompt = require('prompt-sync');
 const entrada = prompt();
 
 let anoAtual = 2024;
-const nomeCompleto = 'Matheus Aliski'
+const nomeCompleto ='ℂℝⓘⓢ𝓣🅾𝐅𝕰𝖗'
 let idade = 17;
-const cursoFaculdade = 'radiologista'
+const cursoFaculdade = '🖤 amor🖤da sua🖤vida.🖤'
 let cidadeAtual = 'SJP';
 
-console.log(`Ola eu sou o '${nomeCompleto} 'eu tenho '$(idade) "moro em" ${cidadeAtual}; quero`);
+console.log(`Ola eu sou o '${nomeCompleto} 'eu tenho '${idade} "moro em" ${cidadeAtual}; quero`);
 console.log(anoAtual);
 
 anoAtual = 2025;
@@ -20,10 +20,10 @@ console.log('------------------');
 console.log('      LOGIN       ');
 console.log('------------------');
 
-const loginCerto = 'Matheus';
+const loginCerto = 'cristofer';
 const senhaCerta = 1234;
 
-var login = entrada('Digite seu login:     ');
+var login = entrada('Digite seu login 🤪 :     ');
 var senha = entrada('Digite sua senha:     ');
 
 
